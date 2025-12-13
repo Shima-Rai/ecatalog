@@ -1,0 +1,45 @@
+Steps:
+Download from https://www.apachefriends.org/index.html
+Install it in C:\xampp (Windows) or /Applications/XAMPP (macOS)
+Start Apache and MySQL from XAMPP Control Panel
+when u click on admin in mysql it goes to mysql where we have to create a database
+
+1.PHP Requirements
+    Your code uses PHP 7.4+ or PHP 8.x, which comes bundled with XAMPP.
+    Make sure php.ini allows:
+    mysqli extension (for database)
+    son extension (for API JSON responses)
+    PHP CLI (optional, for running scripts from terminal) is included in XAMPP.
+️
+2.MySQL Requirements
+    Your project uses a MySQL database. XAMPP provides it.
+    You can use phpMyAdmin to:
+    Create database (ecommerce or similar)
+    Create tables (products, orders)
+    Manage data visually
+
+3.VS Code Requirements
+    VS Code is your IDE for coding HTML, CSS, JS, PHP.
+    Recommended Extensions:
+        PHP Intelephense → PHP autocompletion & error checking
+        PHP Server → Run PHP server without XAMPP if needed
+        Live Server → For front-end preview (HTML/CSS/JS only)
+        Prettier – Code Formatter → Auto-format code
+        Bootstrap 5 Snippets → Faster front-end dev
+        HTML CSS Support → Auto-complete for front-end
+    VS Code Settings:
+        Set default encoding to UTF-8
+        Enable format on save for better readability
+
+4.project Setup
+    Place your project inside C:\xampp\htdocs\your_project (Windows)
+    Access in browser: http://localhost/your_project
+    Database connection in db.php should point to:
+        $conn = new mysqli("localhost", "root", "", "your_db_name");
+
+✅ Summary:
+You just need:
+    XAMPP (with Apache + MySQL + PHP 8.x)
+    VS Code with PHP + front-end extensions
+    Database setup in phpMyAdmin
+    CDNs included for Bootstrap, fonts, charts
